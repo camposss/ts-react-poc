@@ -44,6 +44,7 @@
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
     "lodash": "^4.17.19",
+    "style-loader": "^1.2.1",
     "webpack": "^4.44.0"
   },
   "scripts": {
