@@ -1,5 +1,4 @@
 import React from "react";
-import "./greeting.css";
 export interface HelloProps {
     greeting?: string;
 }
