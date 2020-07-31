@@ -1,0 +1,6 @@
+{
+  "name": "my-app/Hello",
+  "private": true,
+  "main": "../cjs/Hello.js",
+  "module": "../esm/Hello.js"
+}
