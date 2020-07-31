@@ -23,6 +23,7 @@
     "@4c/tsconfig": "^0.3.1",
     "@babel/cli": "^7.10.5",
     "@babel/core": "^7.10.5",
+    "@babel/preset-react": "^7.10.4",
     "@babel/preset-typescript": "^7.10.4",
     "@babel/register": "^7.10.5",
     "@typescript-eslint/eslint-plugin": "^3.7.0",
@@ -32,6 +33,7 @@
     "babel-plugin-istanbul": "^6.0.0",
     "chalk": "^4.1.0",
     "cherry-pick": "^0.5.0",
+    "cpy-cli": "^3.1.1",
     "cross-env": "^7.0.2",
     "dtslint": "^3.6.14",
     "enzyme": "^3.11.0",
@@ -47,7 +49,8 @@
     "start": "react-scripts start",
     "build": "node tools/build.js",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build-types": "yarn tsc -d --emitDeclarationOnly --outDir types"
   },
   "eslintConfig": {
     "extends": "react-app"

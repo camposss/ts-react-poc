@@ -1,7 +1,7 @@
 import React from "react";
 
 export interface HelloProps {
-    greeting: string;
+    greeting?: string;
 }
 
 function Hello(props: HelloProps): React.ReactElement<any, any> | null {

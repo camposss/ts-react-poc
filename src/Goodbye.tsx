@@ -1,7 +1,7 @@
 import React from "react";
 
 export interface GoodbyeProps {
-    greeting: string;
+    greeting?: string;
 }
 
 export function Goodbye(props: GoodbyeProps):  React.ReactElement<any, any> | null {

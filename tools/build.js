@@ -30,7 +30,7 @@ const shell = (cmd) =>
 
 const has = (t) => !targets.length || targets.includes(t);
 
-// const buildTypes = step('generating .d.ts', () => shell(`yarn build-types`));
+const buildTypes = step('generating .d.ts', () => shell(`yarn build-types`));
 
 const copyTypes = (dest) => shell(`cpy ${typesRoot}/*.d.ts ${dest}`);
 
@@ -45,7 +45,7 @@ const babel = (outDir, envName) =>
  */
 const buildLib = step('commonjs modules', async () => {
   await babel(cjsRoot, 'cjs');
-//   await copyTypes(cjsRoot);
+  await copyTypes(cjsRoot);
 });
 
 /**
@@ -54,7 +54,7 @@ const buildLib = step('commonjs modules', async () => {
  */
 const buildEsm = step('es modules', async () => {
   await babel(esRoot, 'esm');
-//   await copyTypes(esRoot);
+  await copyTypes(esRoot);
 });
 
 /**
@@ -95,11 +95,12 @@ console.log(
 clean();
 
 Promise.resolve(true)
+  .then(buildTypes)
   .then(() =>
     Promise.all([
       has('lib') && buildLib(),
       has('es') && buildEsm(),
-    //   has('dist') && buildDist(),
+      has('dist') && buildDist(),
     ]),
   )
   .then(buildDirectories)

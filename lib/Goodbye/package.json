@@ -2,5 +2,6 @@
   "name": "my-app/Goodbye",
   "private": true,
   "main": "../cjs/Goodbye.js",
-  "module": "../esm/Goodbye.js"
+  "module": "../esm/Goodbye.js",
+  "types": "../esm/Goodbye.d.ts"
 }

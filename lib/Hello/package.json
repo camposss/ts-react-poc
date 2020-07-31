@@ -2,5 +2,6 @@
   "name": "my-app/Hello",
   "private": true,
   "main": "../cjs/Hello.js",
-  "module": "../esm/Hello.js"
+  "module": "../esm/Hello.js",
+  "types": "../esm/Hello.d.ts"
 }
