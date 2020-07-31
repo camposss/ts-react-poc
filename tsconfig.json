@@ -6,6 +6,8 @@
       "dom.iterable",
       "esnext"
     ],
+    "outDir": "lib",
+    "noImplicitAny": false,
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,

@@ -1,6 +1,6 @@
 import React from "react";
 
-type GoodbyeProps = {
+export interface GoodbyeProps {
     greeting: string;
 }
 
@@ -10,3 +10,5 @@ export function Goodbye(props: GoodbyeProps):  React.ReactElement<any, any> | nu
         <div className="goodbye-container">{greeting}</div>
     )
 }
+
+export default Goodbye;

@@ -1,12 +1,14 @@
 import React from "react";
 
-type HelloProps = {
+export interface HelloProps {
     greeting: string;
 }
 
-export function Hello(props: HelloProps): React.ReactElement<any, any> | null {
+function Hello(props: HelloProps): React.ReactElement<any, any> | null {
     const {greeting} = props;
     return (
         <div className="hello-container">{greeting}</div>
     )
 }
+
+export default Hello;
