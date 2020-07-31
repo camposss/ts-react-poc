@@ -1,32 +1,14 @@
-/** @jsx jsx */
 import React from "react";
-// import { cx, css } from "emotion";
-import { jsx, css } from "@emotion/core";
+
+import { cx, css } from "emotion";
 
 export interface HelloProps {
   greeting?: string;
 }
 
-const color = "white";
-
 function Hello(props: HelloProps): React.ReactElement<any, any> | null {
   const { greeting } = props;
-  return (
-    <div
-      css={css`
-        padding: 32px;
-        background-color: hotpink;
-        font-size: 24px;
-        border-radius: 4px;
-        &:hover {
-          color: ${color};
-        }
-      `}
-      className={"hello-container"}
-    >
-      {greeting}
-    </div>
-  );
+  return <div className={cx("hello-container", styles.helloContainer)}>{greeting}</div>;
 }
 
 const styles = {
