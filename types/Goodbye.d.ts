@@ -1,3 +1,4 @@
+/** @jsx jsx */
 import React from "react";
 export interface GoodbyeProps {
     greeting?: string;

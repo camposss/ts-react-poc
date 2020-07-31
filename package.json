@@ -8,6 +8,8 @@
   "dependencies": {
     "@emotion/babel-preset-css-prop": "^10.0.27",
     "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.9",
+    "emotion-theming": "^10.0.19",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -34,6 +36,7 @@
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
     "babel-plugin-istanbul": "^6.0.0",
+    "babel-plugin-emotion": "^10.0.23",
     "chalk": "^4.1.0",
     "cherry-pick": "^0.5.0",
     "cpy-cli": "^3.1.1",
